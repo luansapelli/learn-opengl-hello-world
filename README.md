@@ -1,4 +1,4 @@
-# Learn OpenGL - Hello Triangle
+# Learn OpenGL - Hello World
 
 ## Introduction
 
