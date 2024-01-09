@@ -21,16 +21,6 @@ int main() {
         return -1;
     }
 
-    // Set the OpenGL version to 4.6 and use the core profile
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-#ifdef __APPLE__
-    // Forward compatibility with macOS
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-#endif
-
     // Create a windowed mode window and its OpenGL context
     GLFWwindow* window = glfwCreateWindow(window_width, window_height, window_title, nullptr, nullptr);
     if (!window) {
@@ -42,6 +32,16 @@ int main() {
 
     // Make the window's context current
     glfwMakeContextCurrent(window);
+
+    // Set the OpenGL version to 4.6 and use the core profile
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+#ifdef __APPLE__
+    // Forward compatibility with macOS
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+#endif
 
     // Load GLAD
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
