@@ -18,9 +18,9 @@ This project is a simple triangle rendered on the screen. It is the "hello world
 - How to render a triangle on the screen
 
 ## Final result
-![img.png](/screenshot/img.png)
+![imgopengl.png](/screenshot/imgopengl.png)
 
 ## Exercises
-- [ ] Try to draw 2 triangles next to each other using glDrawArrays by adding more vertices to your data.
-- [ ] Now create the same 2 triangles using two different VAOs and VBOs for their data.
-- [ ] Create two shader programs where the second program uses a different fragment shader that outputs the color yellow; draw both triangles again where one outputs the color yellow.
+- [x] Try to draw 2 triangles next to each other using glDrawArrays by adding more vertices to your data.
+- [x] Now create the same 2 triangles using two different VAOs and VBOs for their data.
+- [x] Create two shader programs where the second program uses a different fragment shader that outputs the color yellow; draw both triangles again where one outputs the color yellow.
