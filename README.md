@@ -13,8 +13,8 @@ This project is a simple triangle rendered on the screen. It is the "hello world
 
 - How to setup a project using GLFW and GLAD
 - How to create a window and a OpenGL context
-- How to create a vertex buffer and vertex array
-- How to compile and link shaders
+- What VBO and VAO are and how to create them
+- What is a shader and how to create and use them
 - How to render a triangle on the screen
 
 ## Final result
